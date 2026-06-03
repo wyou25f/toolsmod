@@ -1,0 +1,19 @@
+{
+    "schemaVersion": 1,
+    "id": "tools",
+    "version": "${version}",
+    "name": "Tools",
+    "description": "Admin tools mod",
+    "authors": [],
+    "contact": {},
+    "license": "MIT",
+    "environment": "*",
+    "entrypoints": {
+        "main": ["com.toolsmod.ToolsMod"]
+    },
+    "depends": {
+        "fabricloader": ">=0.18.4",
+        "fabric-api": "*",
+        "minecraft": ">=26.1.2"
+    }
+}
