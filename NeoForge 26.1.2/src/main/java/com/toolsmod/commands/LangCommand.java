@@ -14,7 +14,7 @@ public class LangCommand {
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(
             Commands.literal("tools")
-                .requires(source -> source.hasPermission(2))
+                .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
                 .then(
                     Commands.literal("lang")
                         .then(Commands.literal("ru").executes(ctx -> setLang(ctx, PlayerLang.RU)))

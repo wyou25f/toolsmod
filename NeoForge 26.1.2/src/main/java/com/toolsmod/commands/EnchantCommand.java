@@ -29,7 +29,7 @@ public class EnchantCommand {
         LangCommand.register(event.getDispatcher());
         event.getDispatcher().register(
             Commands.literal("tools")
-                .requires(Commands.hasPermission(2))
+                .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
                 .then(
                     Commands.literal("enchant")
                         .then(
