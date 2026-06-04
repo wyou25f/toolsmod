@@ -29,6 +29,7 @@ public class EnchantCommand {
     public static void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             LangCommand.register(dispatcher);
+            LoreCommand.register(dispatcher);
             dispatcher.register(
                 Commands.literal("tools")
                     .requires(source -> source.permissions().hasPermission(Permissions.COMMANDS_MODERATOR))
