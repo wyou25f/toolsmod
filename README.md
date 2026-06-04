@@ -1,10 +1,27 @@
 # 🧰 Tools Enchant Mod
 
+<a href="https://www.curseforge.com/minecraft/mc-mods/toolplusx" target="_blank">
+    <img src="https://i.imgur.com/KAgud6s.png" alt="CurseForge Page" width="100" />
+</a>
+
+<a href="https://modrinth.com/mod/toolsmod" target="_blank">
+    <img src="https://static.wikia.nocookie.net/logopedia/images/f/f1/Modrinth_icon_dark.svg" alt="Modrinth Page" width="100" />
+</a>
+
+<a href="https://github.com/wyou25f/toolsmod" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="GitHub Page" width="100" />
+</a>
+
+
+![GitHub Release](https://img.shields.io/github/v/release/wyou25f/toolsmod?style=for-the-badge&color=blue)
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.20+-green?style=for-the-badge&logo=minecraft)
-![Loader](https://img.shields.io/badge/Loader-Fabric-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-![Обложка/Preview](https://cdn.modrinth.com/data/cached_images/3dfc79af13ef2eb6ff33ef10651e6ace19951063.jpeg)
+![Loader - Fabric](https://img.shields.io/badge/Loader-Fabric-795742?style=flat&logo=fabricmc&logoColor=white)
+![Loader - NeoForge](https://img.shields.io/badge/Loader_NeoForge-В_разработке-orange?style=flat&logo=neoforge&logoColor=white)
+![Project Version](https://img.shields.io/badge/version-25.1.2-blue?style=flat)
+
+<img src="https://cdn.modrinth.com/data/cached_images/3dfc79af13ef2eb6ff33ef10651e6ace19951063.jpeg" width="400" alt="Preview">
 A lightweight, server-side friendly utility designed to break the vanilla boundaries of Minecraft. It introduces the powerful `/tools` command, giving you complete control over item customization and server adjustments without bloating your game.
 
 ---
