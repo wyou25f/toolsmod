@@ -13,15 +13,12 @@
 </a>
 
 
-![GitHub Release](https://img.shields.io/github/v/release/wyou25f/toolsmod?style=for-the-badge&color=blue)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.20+-green?style=for-the-badge&logo=minecraft)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+[![Modrinth](https://img.shields.io/badge/Modrinth-Active-00AF5C?style=flat&logo=modrinth&logoColor=white)](https://modrinth.com/mod/toolsmod) [![CurseForge](https://img.shields.io/badge/CurseForge-Page-F16436?style=flat&logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/mc-mods/toolplusx) [![GitHub Release](https://img.shields.io/github/v/release/wyou25f/toolsmod?style=flat&color=blue&logo=github&logoColor=white)](https://github.com/wyou25f/toolsmod/releases) [![Issues](https://img.shields.io/badge/Issues-Report_Bug-red?style=flat&logo=github&logoColor=white)](https://github.com/wyou25f/toolsmod/issues) ![Project Version](https://img.shields.io/badge/version-25.1.2-blue?style=flat&logo=actigraph&logoColor=white) ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.20+-green?style=flat&logo=minecraft&logoColor=white) ![Java](https://img.shields.io/badge/Java-25-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Loader - Fabric](https://img.shields.io/badge/Loader-Fabric-795742?style=flat&logo=fabricmc&logoColor=white) ![Loader - NeoForge](https://img.shields.io/badge/Loader_NeoForge-В_разработке-orange?style=flat&logo=neoforge&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat&logo=opensourceinitiative&logoColor=white)
 
-![Loader - Fabric](https://img.shields.io/badge/Loader-Fabric-795742?style=flat&logo=fabricmc&logoColor=white)
-![Loader - NeoForge](https://img.shields.io/badge/Loader_NeoForge-В_разработке-orange?style=flat&logo=neoforge&logoColor=white)
-![Project Version](https://img.shields.io/badge/version-25.1.2-blue?style=flat)
+<div align="center">
+  <img src="https://cdn.modrinth.com/data/l595npQT/8457d098fba6c2c42e81eb2139e313e2f276f7c1_96.webp" width="400" alt="Preview">
+</div>
 
-<img src="https://cdn.modrinth.com/data/cached_images/3dfc79af13ef2eb6ff33ef10651e6ace19951063.jpeg" width="400" alt="Preview">
 A lightweight, server-side friendly utility designed to break the vanilla boundaries of Minecraft. It introduces the powerful `/tools` command, giving you complete control over item customization and server adjustments without bloating your game.
 
 ---
