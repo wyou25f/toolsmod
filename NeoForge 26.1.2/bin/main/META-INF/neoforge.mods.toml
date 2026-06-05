@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
     modId="tools"
-    version="1.0.1"
+    version="1.0.2"
     displayName="Tools Mod"
     description='''Enchant and language commands for moderators.'''
 

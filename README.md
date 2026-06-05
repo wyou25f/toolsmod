@@ -39,12 +39,6 @@ A lightweight, server-side friendly utility designed to break the vanilla bounda
 * `/tools enchant [enchantment_id] [level]` — Enchants the item in your hand (e.g., `/tools enchant sharpness 10`).
 * `/tools lang [en/ru]` — Instantly changes the mod's display language.
 
-### 🚀 Future Roadmap (Where we are heading)
-We want to expand this mod into an ultimate server administration toolkit. Upcoming features:
-* Support for enchantments above level 10 (up to level 32767).
-* Custom item renaming and lore editing via `/tools` subcommands.
-* A simple config file to set max custom limits for survival mode.
-
 ---
 
 ## Русский 🇷🇺
@@ -61,12 +55,6 @@ We want to expand this mod into an ultimate server administration toolkit. Upcom
 ### 📜 Синтаксис команд
 * `/tools enchant [id_зачарования] [уровень]` — Зачаровать предмет в руке (пример: `/tools enchant sharpness 10`).
 * `/tools lang [en/ru]` — Моментально меняет язык мода.
-
-### 🚀 Планы на будущее (Вектор развития)
-Мы хотим превратить этот мод в ультимативный пак инструментов для управления сервером. В следующих обновлениях:
-* Поддержка уровней чар выше 10 (вплоть до 32767).
-* Изменение названий предметов и добавление описаний (Lore) через подкоманды `/tools`.
-* Удобный конфиг-файл для ограничения максимального уровня чар в выживании.
 
 ---
 

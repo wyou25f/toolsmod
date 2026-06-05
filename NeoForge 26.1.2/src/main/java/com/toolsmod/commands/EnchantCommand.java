@@ -27,6 +27,7 @@ public class EnchantCommand {
 
     public static void register(RegisterCommandsEvent event) {
         LangCommand.register(event.getDispatcher());
+        LoreCommand.register(event.getDispatcher());
         event.getDispatcher().register(
             Commands.literal("tools")
                 .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
