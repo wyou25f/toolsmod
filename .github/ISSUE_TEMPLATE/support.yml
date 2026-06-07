@@ -1,0 +1,37 @@
+name: "🙋 Support & Help"
+description: "Need help? Tell us who you are, what you want, and what you need from us."
+title: "[Support]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🛠️ Need assistance?
+        Please fill out this quick form so we can understand your situation and help you out.
+
+  - type: input
+    id: who-are-you
+    attributes:
+      label: "Who are you? (Optional)"
+      description: "Leave your Telegram handle, Discord, or email if you want us to contact you directly."
+      placeholder: "@username / email@example.com"
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-you-want
+    attributes:
+      label: "What do you want to achieve?"
+      description: "Describe your goal. What are you trying to do or configure in the project?"
+      placeholder: "I am trying to run ToolsMod on my server, but I want to change the default port..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-you-need
+    attributes:
+      label: "What do you need from us?"
+      description: "What exactly do you expect from the maintainers? (e.g., explain a feature, fix a config, guide you)."
+      placeholder: "I need a short explanation or an example of how to modify the config file for this."
+    validations:
+      required: true
