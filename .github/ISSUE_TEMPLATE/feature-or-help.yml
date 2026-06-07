@@ -9,18 +9,18 @@ body:
         ### 🔥 Thank you for wanting to make this project better!
         Please fill out this quick form so we can review your idea or contribution proposal effectively.
 
-      - type: dropdown
-        id: help-type
-        attributes:
-          label: "What is the nature of your proposal?"
-          options:
-            - "💡 I have a new feature request / idea"
-            - "💻 I want to write code (Fix a bug / Implement a feature)"
-            - "🎨 I want to help with Design / UI / UX"
-            - "✍️ I want to help with Documentation / Writing"
-            - "Other"
-        validations:
-          required: true
+  - type: dropdown
+    id: help-type
+    attributes:
+      label: "What is the nature of your proposal?"
+      options:
+        - "💡 I have a new feature request / idea"
+        - "💻 I want to write code (Fix a bug / Implement a feature)"
+        - "🎨 I want to help with Design / UI / UX"
+        - "✍️ I want to help with Documentation / Writing"
+        - "Other"
+    validations:
+      required: true
 
   - type: textarea
     id: description
