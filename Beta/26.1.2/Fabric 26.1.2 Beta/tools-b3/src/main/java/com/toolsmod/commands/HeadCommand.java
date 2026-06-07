@@ -45,7 +45,7 @@ public class HeadCommand {
             + " minecraft:player_head[profile={name:\"" + username + "\"}] " + amount;
 
         ctx.getSource().getServer().getCommands()
-            .performPrefixedCommand(ctx.getSource().withPermission(4), cmd);
+            .performPrefixedCommand(ctx.getSource(), cmd);
 
         ctx.getSource().sendSuccess(() -> Component.literal(
             lang.equals(PlayerLang.RU)
