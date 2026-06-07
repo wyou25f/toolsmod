@@ -1,68 +1,70 @@
-name: "🐛 Баг-репорт (Найдена ошибка)"
-description: "Сообщите об ошибке или некорректной работе, чтобы мы могли её исправить"
+name: "🐛 Bug Report"
+description: "Report a bug or unexpected behavior to help us fix it"
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### 🚨 Перед отправкой убедитесь, что этого бага еще нет в списке открытых Issues.
+        ### 🚨 Before submitting, please ensure this bug hasn't been reported yet by searching through the open Issues.
 
   - type: textarea
     id: clear-description
     attributes:
-      label: "Описание бага"
-      description: "Четкое и краткое описание того, в чем заключается ошибка."
-      placeholder: "При нажатии на кнопку отправки форма очищается, но данные не уходят..."
+      label: "Bug Description"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "When clicking the submit button, the form clears but no data is sent..."
     validations:
       required: true
 
   - type: textarea
     id: reproduction-steps
     attributes:
-      label: "Шаги для воспроизведения"
-      description: "Опишите пошагово, как вызвать эту ошибку."
+      label: "Steps to Reproduce"
+      description: "Provide step-by-step instructions to reproduce the error."
       placeholder: |
-        1. Перейти на вкладку 'Профиль'
-        2. Нажать на 'Редактировать'
-        3. В поле имя ввести спецсимволы
-        4. Увидеть белый экран
+        1. Go to 'Profile' tab
+        2. Click on 'Edit'
+        3. Enter special characters into the name field
+        4. See a blank screen
     validations:
       required: true
 
   - type: textarea
     id: expected-behavior
     attributes:
-      label: "Ожидаемое поведение"
-      description: "Что должно было произойти вместо этого?"
-      placeholder: "Данные должны сохраниться, а пользователя должно перенаправить на главную страницу."
+      label: "Expected Behavior"
+      description: "What did you expect to happen instead?"
+      placeholder: "The data should be saved, and the user should be redirected to the main dashboard."
     validations:
       required: true
 
   - type: input
     id: environment
     attributes:
-      label: "Окружение / Версия"
-      description: "Укажите версию приложения, ОС, браузер."
-      placeholder: "Windows 11, Google Chrome v124, Версия приложения v1.2.0"
+      label: "Environment / Version"
+      description: "App version, OS, browser, or runtime environment."
+      placeholder: "Windows 11, Google Chrome v124, App v1.2.0"
     validations:
       required: true
 
   - type: textarea
     id: logs-or-screenshots
     attributes:
-      label: "Логи, скриншоты или код ошибки"
-      description: "Сюда можно перетащить скриншот, вставить текст ошибки или логи консоли."
-      placeholder: "Вставьте сюда текст логов или просто перетащите картинку..."
+      label: "Screenshots, Logs, or Error Messages"
+      description: "You can drag and drop images here, or paste console logs / error stack traces."
+      placeholder: "Paste logs here or drag & drop screenshots..."
     validations:
       required: false
 
   - type: checkboxes
     id: checkboxes
     attributes:
-      label: "Дополнительная проверка"
+      label: "Validation Checklist"
       options:
-        - label: "Я использую последнюю версию проекта."
+        - label: "I am using the latest version of the project."
           required: true
-        - label: "Я проверил, что баг воспроизводится стабильно."
+        - label: "I have searched existing issues, and this is not a duplicate."
+          required: true
+        - label: "This issue can be reliably reproduced."
           required: false
