@@ -1,0 +1,60 @@
+name: "🤝 Предложение помощи / Идея"
+description: "Хотите помочь проекту кодом, дизайном, текстами или предложить крутую фичу?"
+title: "[Идея/Помощь]: "
+labels: ["enhancement", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🔥 Спасибо, что хотите сделать проект лучше! 
+        Пожалуйста, заполните эту небольшую форму, чтобы мы поняли друг друга быстрее.
+
+  - type: dropdown
+    id: help-type
+    attributes:
+      label: "Чем вы хотите помочь?"
+      options:
+        - "💡 У меня есть идея новой фичи (Feature Request)"
+        - "💻 Хочу писать код (Исправить баг / Добавить фичу)"
+        - "🎨 Хочу помочь с дизайном / UI / UX"
+        - "✍️ Хочу помочь с документацией / текстами"
+        - "Другое"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Суть вашего предложения"
+      description: "Подробно опишите вашу идею или то, какую задачу вы хотите взять на себя."
+      placeholder: "Я бы хотел добавить темную тему для интерфейса, потому что..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: "Как вы это видите? (Необязательно)"
+      description: "Если у вас есть мысли по реализации, дизайну или ссылки на примеры — делитесь."
+      placeholder: "Можно использовать библиотеку Tailwind CSS или сделать вот так..."
+    validations:
+      required: false
+
+  - type: input
+    id: skills
+    attributes:
+      label: "Ваш стек / навыки (Если планируете писать код/дизайнить)"
+      description: "Например: React, Python, Figma, пишу тексты на русском/английском."
+      placeholder: "JavaScript, HTML/CSS, опыт работы 1 год"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ready-to-work
+    attributes:
+      label: "Готовность"
+      options:
+        - label: "Я готов сам заняться реализацией этой задачи (сделать Pull Request)."
+          required: false
+        - label: "Мне нужна помощь/наставничество со стороны владельца проекта."
+          required: false
