@@ -1,60 +1,62 @@
-name: "🤝 Предложение помощи / Идея"
-description: "Хотите помочь проекту кодом, дизайном, текстами или предложить крутую фичу?"
-title: "[Идея/Помощь]: "
+name: "🤝 Feature Request & Contribution"
+description: "Propose a new idea or offer to help with code, design, or documentation"
+title: "[Proposal]: "
 labels: ["enhancement", "help wanted"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### 🔥 Спасибо, что хотите сделать проект лучше! 
-        Пожалуйста, заполните эту небольшую форму, чтобы мы поняли друг друга быстрее.
+        ### 🔥 Thank you for wanting to make this project better!
+        Please fill out this quick form so we can review your idea or contribution proposal effectively.
 
-  - type: dropdown
-    id: help-type
-    attributes:
-      label: "Чем вы хотите помочь?"
-      options:
-        - "💡 У меня есть идея новой фичи (Feature Request)"
-        - "💻 Хочу писать код (Исправить баг / Добавить фичу)"
-        - "🎨 Хочу помочь с дизайном / UI / UX"
-        - "✍️ Хочу помочь с документацией / текстами"
-        - "Другое"
-    validations:
-      required: true
+      - type: dropdown
+        id: help-type
+        attributes:
+          label: "What is the nature of your proposal?"
+          options:
+            - "💡 I have a new feature request / idea"
+            - "💻 I want to write code (Fix a bug / Implement a feature)"
+            - "🎨 I want to help with Design / UI / UX"
+            - "✍️ I want to help with Documentation / Writing"
+            - "Other"
+        validations:
+          required: true
 
   - type: textarea
     id: description
     attributes:
-      label: "Суть вашего предложения"
-      description: "Подробно опишите вашу идею или то, какую задачу вы хотите взять на себя."
-      placeholder: "Я бы хотел добавить темную тему для интерфейса, потому что..."
+      label: "Description"
+      description: "Clearly describe your idea or the task you'd like to take on. What value does it add?"
+      placeholder: "It would be great to add a dark mode toggle because..."
     validations:
       required: true
 
   - type: textarea
     id: implementation
     attributes:
-      label: "Как вы это видите? (Необязательно)"
-      description: "Если у вас есть мысли по реализации, дизайну или ссылки на примеры — делитесь."
-      placeholder: "Можно использовать библиотеку Tailwind CSS или сделать вот так..."
+      label: "Proposed Solution / Implementation Thoughts"
+      description: "Any ideas on how to build this? Feel free to link examples, libraries, or mockups."
+      placeholder: "We could integrate Tailwind CSS or structure the UI components like..."
     validations:
       required: false
 
   - type: input
     id: skills
     attributes:
-      label: "Ваш стек / навыки (Если планируете писать код/дизайнить)"
-      description: "Например: React, Python, Figma, пишу тексты на русском/английском."
-      placeholder: "JavaScript, HTML/CSS, опыт работы 1 год"
+      label: "Your Skills / Tech Stack"
+      description: "Let us know what tools, languages, or design software you are comfortable with (if you plan to contribute)."
+      placeholder: "e.g., React, Python, Figma, Technical Writing"
     validations:
       required: false
 
   - type: checkboxes
-    id: ready-to-work
+    id: checklist
     attributes:
-      label: "Готовность"
+      label: "Next Steps & Alignment"
       options:
-        - label: "Я готов сам заняться реализацией этой задачи (сделать Pull Request)."
+        - label: "I have searched existing issues, and this is not a duplicate request."
+          required: true
+        - label: "I am willing to work on this myself and submit a Pull Request."
           required: false
-        - label: "Мне нужна помощь/наставничество со стороны владельца проекта."
+        - label: "I would love to work on this but might need some guidance/mentorship from maintainers."
           required: false
