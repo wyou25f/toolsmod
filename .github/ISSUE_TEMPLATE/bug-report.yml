@@ -1,0 +1,68 @@
+name: "🐛 Баг-репорт (Найдена ошибка)"
+description: "Сообщите об ошибке или некорректной работе, чтобы мы могли её исправить"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🚨 Перед отправкой убедитесь, что этого бага еще нет в списке открытых Issues.
+
+  - type: textarea
+    id: clear-description
+    attributes:
+      label: "Описание бага"
+      description: "Четкое и краткое описание того, в чем заключается ошибка."
+      placeholder: "При нажатии на кнопку отправки форма очищается, но данные не уходят..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: "Шаги для воспроизведения"
+      description: "Опишите пошагово, как вызвать эту ошибку."
+      placeholder: |
+        1. Перейти на вкладку 'Профиль'
+        2. Нажать на 'Редактировать'
+        3. В поле имя ввести спецсимволы
+        4. Увидеть белый экран
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Ожидаемое поведение"
+      description: "Что должно было произойти вместо этого?"
+      placeholder: "Данные должны сохраниться, а пользователя должно перенаправить на главную страницу."
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Окружение / Версия"
+      description: "Укажите версию приложения, ОС, браузер."
+      placeholder: "Windows 11, Google Chrome v124, Версия приложения v1.2.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs-or-screenshots
+    attributes:
+      label: "Логи, скриншоты или код ошибки"
+      description: "Сюда можно перетащить скриншот, вставить текст ошибки или логи консоли."
+      placeholder: "Вставьте сюда текст логов или просто перетащите картинку..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: "Дополнительная проверка"
+      options:
+        - label: "Я использую последнюю версию проекта."
+          required: true
+        - label: "Я проверил, что баг воспроизводится стабильно."
+          required: false
